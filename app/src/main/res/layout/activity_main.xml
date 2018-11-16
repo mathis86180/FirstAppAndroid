@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview_calcul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        android:height="50dp"
+        android:layout_margin="10dp"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        android:height="50dp"
+        android:layout_margin="10dp"
+        android:textAlignment="textEnd"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/button_number_7"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:text="7"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_8"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:text="8"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_9"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:text="9"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:text="x"
+            android:onClick="chooseOperator"/>
+
+        <Button
+            android:id="@+id/button_number_4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:text="4"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_5"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:text="5"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_6"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:text="6"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_substract"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:text="-"
+            android:onClick="chooseOperator"/>
+
+
+        <Button
+            android:id="@+id/button_number_1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:text="1"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:text="2"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_number_3"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:text="3"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:text="+"
+            android:onClick="chooseOperator"/>
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:text="C"
+            android:onClick="clearResultat"/>
+
+        <Button
+            android:id="@+id/button_equals"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:text="="
+            android:onClick="calculate"/>
+
+        <Button
+            android:id="@+id/button_number_0"
+            android:layout_column="2"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:text="0"
+            android:onClick="addCharToText"/>
+
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_column="3"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:text="/"
+            android:onClick="chooseOperator"/>
+
+        <Button
+            android:id="@+id/button_coma"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:text="."
+            android:onClick="addCharToText"/>
+        <Button
+            android:id="@+id/button_modulo"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:text="%"
+            android:onClick="chooseOperator"/>
+        <Button
+            android:id="@+id/button__parenthesis_right"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:text=""
+            />
+
+
+
+    </GridLayout>
+</LinearLayout>

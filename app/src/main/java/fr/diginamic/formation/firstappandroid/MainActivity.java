@@ -81,15 +81,15 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case "x":
-                IOperation operationMultiply = (a, b) ->  a - b;
+                IOperation operationMultiply = (a, b) ->  a * b;
                 resultat = operationMultiply.doOperation(numberMemoryDouble, textViewDouble);
                 break;
             case "/":
-                IOperation operationDivide = (a, b) ->  a - b;
+                IOperation operationDivide = (a, b) ->  a / b;
                 resultat = operationDivide.doOperation(numberMemoryDouble, textViewDouble);
                 break;
             case "%":
-                IOperation oerationModulo = (a, b) ->  a - b;
+                IOperation oerationModulo = (a, b) ->  a % b;
                 resultat = oerationModulo.doOperation(numberMemoryDouble, textViewDouble);
                 break;
         }
